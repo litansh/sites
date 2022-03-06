@@ -1,0 +1,76 @@
+<!doctype html>
+ <html lang="en">
+ <style>
+  body {
+    background-color:black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  form {
+    background-color:white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  div.opacity {
+    opacity: 0.8;
+    font-weight: 900;
+  }
+  table, th, td {
+    background-color:red;
+    border: 1px solid black;
+  }
+
+  
+  @media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  body, table, form, div.opacity, .buttonstart, .buttonend, .opacity, .container, .jumbotron, .col-md-12, .row {
+    width:100%;
+  }
+}
+ </style>
+
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="30">
+   <title>CGLMS - PingMonitor</title>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ </head>
+
+ <body class="body">
+
+  <table style="width:100%" class="table">
+   <tr>
+######
+  </table>
+  <br><br><br><br><br><br><br><br><br><br>
+<form action="fileUploadScript.php" method="post" align="center" enctype="multipart/form-data">
+  <b>Upload a File with URLs to Monitor (Add to existing file!!!):</b>
+    <input type="file" name="the_file" id="fileToUpload">
+    <input type="submit" name="submit" value="Start Upload">
+</form>
+<form action="fileUploadScriptW.php" method="post" align="center" enctype="multipart/form-data">
+  <b>Upload a File with URLs to Monitor (OVERWRITES!!!):</b>
+  <input type="file" name="the_file" id="fileToUpload">
+  <input type="submit" name="submit" value="Start Upload">
+</form>
+<form action="BacktoOriginal.php" method="post" align="center" enctype="multipart/form-data">
+  <b>Restoring to Original version:
+  <input type="submit" name="submit">
+</form>
+
+<form method="post"  align="center" action="createfile.php">
+  <b>Link to remove:</b>
+  <div id="dat"><textarea name="thedata" id="thedata" cols="50" rows="3"></textarea></div>
+  <input type="submit" value=" Remove ">
+  </div>
+  </form>
+  <form id="form" method="get" align="center">
+    <b>Go back to dashboard</b>
+    <button type="submit" formaction="../index.html">Go</button>
+  </form> 
+ </body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+ <body>
+ <h2>Purge your Domain:</h2>
+  <table style="width:100%">
+   
+    <form action="purge.php" method="POST">
+      
+    <input name="domain" type="hidden" value="litanshamir.com"/>
+
+    <p>Input Authentication Email:</p>
+    <input name="email" type="text" placeholder="Email"required />
+    
+    <p>Input Account Key:</p>
+    <input name="key" type="text" placeholder="Account Key"required />
+    <br><br>
+    <br>    <input type="submit" value="Purge Cache">
+
+   </form>
+
+  </table>
+ </body>
+<BR>
+</html>
